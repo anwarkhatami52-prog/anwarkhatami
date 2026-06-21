@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">فەرهەنگی سۆرانی</string>
+    <string name="home">ماڵەوە</string>
+    <string name="favorites">بەندینراوەکان</string>
+    <string name="statistics">ئامارەکان</string>
+    <string name="settings">سازکاریەکان</string>
+    <string name="add_word">زیادکردنی وشە</string>
+</resources>

@@ -24,10 +24,10 @@ fun FavoritesScreen(
     Scaffold(
         topBar = {
             TopAppBar(
-                title = { Text("المفضلة") },
+                title = { Text("ئه‌ندامی تێدا") },
                 navigationIcon = {
                     IconButton(onClick = { navController.popBackStack() }) {
-                        Icon(Icons.Default.ArrowBack, contentDescription = "رجوع")
+                        Icon(Icons.Default.ArrowBack, contentDescription = "گەڕاوە")
                     }
                 }
             )
@@ -43,7 +43,7 @@ fun FavoritesScreen(
                 horizontalAlignment = androidx.compose.ui.Alignment.CenterHorizontally
             ) {
                 Text(
-                    "لا توجد كلمات مفضلة",
+                    "بابەتی تێدابوون نیە",
                     style = MaterialTheme.typography.bodyLarge
                 )
             }
@@ -91,24 +91,24 @@ fun WordCard(word: com.anwarkhatami.sorani.data.local.entity.WordEntity, onFavor
                 IconButton(onClick = onFavoriteToggle) {
                     Icon(
                         Icons.Default.Favorite,
-                        contentDescription = "المفضلة",
+                        contentDescription = "ئه‌ندامی تێدا",
                         tint = if (word.isFavorite) MaterialTheme.colorScheme.error else MaterialTheme.colorScheme.outline
                     )
                 }
             }
             if (word.pronunciation.isNotEmpty()) {
                 Text(
-                    "النطق: ${word.pronunciation}",
+                    "لێپاڵاوو: ${word.pronunciation}",
                     style = MaterialTheme.typography.bodySmall
                 )
             }
             Text(
-                "المعنى: ${word.meaning}",
+                "واتە: ${word.meaning}",
                 style = MaterialTheme.typography.bodyMedium
             )
             if (word.explanation.isNotEmpty()) {
                 Text(
-                    "الشرح: ${word.explanation}",
+                    "تێگەیاندنە: ${word.explanation}",
                     style = MaterialTheme.typography.bodySmall
                 )
             }
