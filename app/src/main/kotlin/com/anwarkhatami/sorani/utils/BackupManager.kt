@@ -33,7 +33,7 @@ class BackupManager(private val context: Context) {
     fun exportToTxt(words: List<WordEntity>): String {
         val sb = StringBuilder()
         words.forEach { word ->
-            sb.append("═══════════════════════════════════\n")
+            sb.append("═══════════════════════════════════════════════════════\n")
             sb.append("الكلمة: ${word.kurdishWord}\n")
             sb.append("النطق: ${word.pronunciation}\n")
             sb.append("المعنى: ${word.meaning}\n")
@@ -42,8 +42,7 @@ class BackupManager(private val context: Context) {
             sb.append("المرادفات: ${word.synonyms}\n")
             sb.append("الأضداد: ${word.antonyms}\n")
             sb.append("الملاحظات: ${word.notes}\n")
-            sb.append("المصدر: ${word.source}\n")
-            sb.append("الفئة: ${word.category}\n\n")
+            sb.append("المصدر: ${word.source}\n\n")
         }
         val fileName = "sorani_backup_${dateFormat.format(Date())}.txt"
         val file = File(context.getExternalFilesDir(null), fileName)
