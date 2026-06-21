@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-    <PreferenceCategory android:title="سازکارییەکان">
+    <PreferenceCategory android:title="سازکاریەکان">
         <SwitchPreference
             android:defaultValue="false"
             android:key="dark_mode"
-            android:title="وەچێتی شەووە" />
+            android:title="وەچێتی شەوە" />
     </PreferenceCategory>
 </PreferenceScreen>
