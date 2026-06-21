@@ -33,7 +33,7 @@ class BackupManager(private val context: Context) {
     fun exportToTxt(words: List<WordEntity>): String {
         val sb = StringBuilder()
         words.forEach { word ->
-            sb.append("═══════════════════════════════════════════════════════\n")
+            sb.append("=".repeat(50) + "\n")
             sb.append("الكلمة: ${word.kurdishWord}\n")
             sb.append("النطق: ${word.pronunciation}\n")
             sb.append("المعنى: ${word.meaning}\n")
